@@ -9,4 +9,7 @@ install-package:       # This job runs in the build stage, which runs first.
     - pip install at-packaging-tools
     - create_changed_packages --help
 
-
+job2:
+  stage: build
+  script:
+    - echo "Job 2"
